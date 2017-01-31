@@ -19,21 +19,43 @@ change?
 
 
 
+After I make all the necessary changes in the working directory I will add the file which contains
+one logical change to staging area and commit the changes with appropriate message. I can do that with
+other files similarly.
 
 What are some situations when branches would be helpful in keeping your history
 organized? 
 How would branches help?
 
+If I want to add some feature in the application and I also want to retain the current version then
+branches could help in a situation where I want to keep the old application live and also fix some
+bugs which were there . This way we can add new feature in one branch and fix bugs in older version in 
+another branch.
 
 
 
 How do the diagrams help you visualize the branch structure?
 
 
-What is the result of merging two branches together? 
-Why do we represent it in
+
+It shows the chain of commits in the branches help us find out till what point all branches were in a
+single flow.
+
+What is the result of merging two branches together?Why do we represent it in
 the diagram the way we do?
+
+
+Merging two branches includes the changes done in both of the branches in the same branch.
+the diagram differentiates the changes were made in two seperate branches and shows the merged commit
+has two parents.
 
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+auto merging helps us in a way that we don't have to compare the code and check which code to include 
+or which to not. when a conflict occurs git asks us to solve the conflict manually which is good because
+sometimes it is required to consult with the owner of the other branch that what changes are needed to
+be kept.
+
+
